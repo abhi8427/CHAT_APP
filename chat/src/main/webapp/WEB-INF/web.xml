@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+  <context-param>
+    <param-name>ADMINCHAT_PATH</param-name>
+    <param-value>/chat/AdminChatServlet</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>ROOMLIST_PATH</param-name>
+    <param-value>/chat/RoomListServlet</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>CHROOM_PATH</param-name>
+    <param-value>/chat/ChRoomServlet</param-value>
+  </context-param>
+
+  <servlet>
+    <servlet-name>MainChatServlet</servlet-name>
+    <servlet-class>MainChatServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AdminChatServlet</servlet-name>
+    <servlet-class>AdminChatServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ChRoomServlet</servlet-name>
+    <servlet-class>ChRoomServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>RoomListServlet</servlet-name>
+    <servlet-class>RoomListServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AdminChatServlet</servlet-name>
+    <url-pattern>/AdminChatServlet</url-pattern>
+   </servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>RoomListServlet</servlet-name>
+    <url-pattern>/RoomListServlet</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>ChRoomServlet</servlet-name>
+    <url-pattern>/ChRoomServlet</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>MainChatServlet</servlet-name>
+    <url-pattern>/MainChatServlet</url-pattern>
+</servlet-mapping>
+
+  
+</web-app>
